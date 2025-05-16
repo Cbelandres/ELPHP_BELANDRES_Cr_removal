@@ -12,7 +12,7 @@ Export and include a fully working Postman collection with all API routes, inclu
 ## PHP Repo [Link:](https://github.com/Cbelandres/ELPHP_BELANDRES_Cr_removal.git)
 * [https://github.com/Cbelandres/ELPHP_BELANDRES_Cr_removal.git](https://github.com/Cbelandres/ELPHP_BELANDRES_Cr_removal.git)
 
-* RESULTS
+Spesific api's excluding authentication and the CRUD function being used
 [![screenshots](./resources/images/5API.png)
 ![screenshots](./resources/images/CRUD.png)
 ![screenshots](./resources/images/postman.png)]
