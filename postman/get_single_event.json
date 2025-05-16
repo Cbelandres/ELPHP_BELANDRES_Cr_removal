@@ -1,0 +1,30 @@
+{
+	"info": {
+		"_postman_id": "get-single-event",
+		"name": "Get Single Event",
+		"description": "Retrieve a specific event by ID from the API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Single Event",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/events/1",
+					"host": ["{{base_url}}"],
+					"path": ["events", "1"]
+				},
+				"description": "Retrieve a specific event by ID"
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:8000/api",
+			"type": "string"
+		}
+	]
+} 

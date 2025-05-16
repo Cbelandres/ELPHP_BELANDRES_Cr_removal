@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "update-event",
+		"name": "Update Event",
+		"description": "Update an existing event through the API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Update Event",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Updated Event\",\n    \"description\": \"This is an updated event\",\n    \"date\": \"2024-03-21\",\n    \"location\": \"Updated Location\"\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/events/1",
+					"host": ["{{base_url}}"],
+					"path": ["events", "1"]
+				},
+				"description": "Update an existing event"
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:8000/api",
+			"type": "string"
+		}
+	]
+} 

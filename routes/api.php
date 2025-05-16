@@ -8,6 +8,8 @@ use App\Http\Controllers\API\AuthController;
 use App\Http\Controllers\API\CampaignController;
 use App\Http\Controllers\API\AdminController;
 use App\Http\Controllers\API\ReportController;
+use App\Http\Controllers\EventController;
+
 
 // Public routes
 Route::post('register', [AuthController::class, 'register']);
@@ -15,6 +17,14 @@ Route::post('login', [AuthController::class, 'login']);
 Route::post('farmers/register', [FarmerController::class, 'register']);
 Route::post('investors/register', [InvestorController::class, 'register']);
 Route::post('admin/create', [AdminController::class, 'createAdmin']);
+
+//Events routes 
+
+Route::get('events', [EventController::class, 'index']);         // Get all events
+Route::post('events', [EventController::class, 'store']);        // Create new event
+Route::get('events/{id}', [EventController::class, 'show']);     // Get single event
+Route::put('events/{id}', [EventController::class, 'update']);   // Update event
+Route::delete('events/{id}', [EventController::class, 'destroy']); // Delete event
 
 // Protected routes
 Route::middleware('auth:sanctum')->group(function () {
@@ -42,4 +52,5 @@ Route::middleware('auth:sanctum')->group(function () {
         Route::post('campaigns/{id}/fund', [CampaignController::class, 'fund']);
         Route::get('investor/dashboard', [ReportController::class, 'investorDashboard']);
     });
+    
 }); 
