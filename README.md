@@ -14,8 +14,9 @@ Export and include a fully working Postman collection with all API routes, inclu
 
 Spesific api's excluding authentication and the CRUD function being used
 [![screenshots](./resources/images/5API.png)
-![screenshots](./resources/images/CRUD.png)
-![screenshots](./resources/images/postman.png)]
+![screenshots](./resources/images/CRUD.png)]
+
+
 
 
 
