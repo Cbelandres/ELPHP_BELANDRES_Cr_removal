@@ -11,10 +11,11 @@ Export and include a fully working Postman collection with all API routes, inclu
 
 ## PHP Repo [Link:](https://github.com/Cbelandres/ELPHP_BELANDRES_Cr_removal.git)
 * [https://github.com/Cbelandres/ELPHP_BELANDRES_Cr_removal.git](https://github.com/Cbelandres/ELPHP_BELANDRES_Cr_removal.git)
-[![screenshots](./resources/images/image0.png)
-![screenshots](./resources/images/image1.png)
 
-![screenshots](./resources/images/image14.png)]
+* RESULTS
+[![screenshots](./resources/images/5API.png)
+![screenshots](./resources/images/CRUD.png)
+![screenshots](./resources/images/postman.png)]
 
 
 
